@@ -7,11 +7,11 @@ function newTime() {
 
     const hours = date.getHours()
     const minutes = date.getMinutes()
-    const seconds = date.getSeconds()
+    const Seconds = date.getSeconds()
 
-    hoursElement.textContent = hours;
-    minutesElement.textContent = minutes;
-    secondsElement.textContent = seconds;
+    hoursElement.textContent = fixTime(hours);
+    minutesElement.textContent = fixTime(minutes);
+    secondsElement.textContent = fixTime(Seconds);
 }
 
 function fixTime(time) {
